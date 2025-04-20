@@ -16,11 +16,11 @@ python3 --version `or` python --version
 
 ## 5. Create n activate virtual env
 python3 -m venv myvenv 
-source myvenv/bin/activate
+`source myvenv/bin/activate`
 
 ## 6. Install django
 pip install django 
-python -m django --version
+`python -m django --version`
 
 ## 7. Runserver
 python manage.py runserver
