@@ -1,12 +1,9 @@
 <!Doctype>
 <html>
 <body>
-    {% with first_name="Datta" %}
-    <h1>Hello {{ first_name }}, how are you?</h1>
-    {% endwith %}
+    <h1>Welcome {# everyone! #}</h1>
+    <p> this page contains a footer in a template </p>
 
-<p> In views.py you can see what the fruits variable look like. </p>
-<p> In template.html you can see how to use the variable</p>
-
+    {% include "mymenu.html" with me="Datta" sponser="W3SCHOOLS" %}
 </body>
 </html>
