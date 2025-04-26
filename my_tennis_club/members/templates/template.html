@@ -1,9 +1,26 @@
 <!Doctype>
 <html>
 <body>
-    <h1>Welcome {# everyone! #}</h1>
-    <p> this page contains a footer in a template </p>
+    <p>The queryset object:</p>
+    {{ mymembers }}
 
-    {% include "mymenu.html" with me="Datta" sponser="W3SCHOOLS" %}
+    <p>Loop through the items:</p>
+    
+    <table border="1">
+    <tr>
+        <th>Member ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+    </tr>
+    {% for member in mymembers %}
+        <tr>
+            <td>{{ member.id }}</td>
+            <td>{{ member.first_name }}</td>
+            <td>{{ member.last_name }}</td>
+            <td>{{ member.phone }}</td>
+        </tr>
+    {% endfor %}
+    </table>
 </body>
 </html>
