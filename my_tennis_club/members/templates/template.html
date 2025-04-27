@@ -1,11 +1,13 @@
+{% load static %}
 <!Doctype>
 <html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
 <body>
     <p>The queryset object:</p>
     {{ mymembers }}
 
     <p>Loop through the items:</p>
-    
+
     <table border="1">
     <tr>
         <th>Member ID</th>
